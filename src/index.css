@@ -7,6 +7,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+*{
+  --responsive: calc(var(--min-size)*0.06em + (var(--max-size) - var(--min-size))*(0.12821vw - 0.53846px));
+  box-sizing: border-box;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
