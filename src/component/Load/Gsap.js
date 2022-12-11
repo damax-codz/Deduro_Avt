@@ -19,7 +19,7 @@ const Gsap = () => {
     document.body.style.overflow = "hidden";
 
     setTimeout(() => {
-      navigate("/home");
+      navigate("/Deduro_Avt/home");
     }, 15000);
 
     return () => {
