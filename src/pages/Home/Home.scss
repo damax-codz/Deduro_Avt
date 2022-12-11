@@ -9,25 +9,15 @@
 .home_page {
   background-color: rgba(245, 245, 245, 0.681);
   min-height: 100vh;
-  .follow {
-    width: 15px;
-    height: 15px;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background-color: rgba(237, 131, 18, 0.804);
-    transition: 0.2s ease-out;
-    display: none;
-    z-index: 1;
-  }
+
   .page_container {
-    padding: 30px 30px 0px;
+    padding: 40px 40px 0px;
     .home_nav {
       display: flex;
       justify-content: space-between;
       .nav_text {
         text-transform: uppercase;
-        @include font("Noto Sans Chakma", none, 500, 14px, rgb(0, 0, 0));
+        @include font("Noto Sans Chakma", none, 500, 12px, rgb(0, 0, 0));
         cursor: pointer;
       }
     }

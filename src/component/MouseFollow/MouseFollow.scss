@@ -1,0 +1,11 @@
+.follow {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background-color: rgba(237, 131, 18, 0.804);
+    transition: 0.2s ease-out;
+    display: none;
+    z-index: 1;
+  }

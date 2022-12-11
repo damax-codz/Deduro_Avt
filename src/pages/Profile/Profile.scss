@@ -1,0 +1,57 @@
+@mixin font($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+
+.profile_page {
+  background-color: rgba(245, 245, 245, 0.681);
+  min-height: 100vh;
+
+  .page_container {
+    padding: 40px 40px 0px;
+    width: 100%;
+    .home_nav {
+      display: flex;
+      justify-content: space-between;
+      .nav_text {
+        text-transform: uppercase;
+        @include font("Noto Sans Chakma", none, 500, 12px, rgb(0, 0, 0));
+        cursor: pointer;
+      }
+    }
+    .hero_image {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 25px;
+      overflow: hidden;
+      img {
+        width: 100%;
+      }
+      .hero_title {
+        @include font("Fraunces", serif, 400, 5vw, rgb(0, 0, 0));
+        position: absolute;
+        transform: translateY(-50%);
+        margin: 0%;
+      }
+    }
+    .text_scroll {
+      width: 250%;
+      margin-top: 70px;
+      @include font("'Hanken Grotesk", sans-serif, 100, 120px, rgb(0, 0, 0));
+      overflow: hidden;
+      text-transform: capitalize;
+      span {
+        @include font("Fraunces", italic, 400, 100px, rgb(0, 0, 0));
+      }
+    }
+    .extra{
+        height: 100vh;
+    }
+  }
+}

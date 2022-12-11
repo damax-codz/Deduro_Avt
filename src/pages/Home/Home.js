@@ -6,17 +6,18 @@ import Tobi from "./../../component/assets/images/tobi4.jpeg";
 import profile from "./../../component/assets/images/tobi5.jpeg";
 import SplitText from "gsap-trial/SplitText";
 import Exit from "../../component/Exit/Exit";
+import { useNavigate } from "react-router";
 
 gsap.registerPlugin(SplitText);
 
 const Home = () => {
   const cursorRef = useRef();
-
   const imgRef = useRef();
   const imgRef2 = useRef();
   const body = useRef();
   const [exitAnim, setAnim] = useState(false);
   const tl = gsap.timeline();
+  const navigate = useNavigate();
 
   function changeAnim() {
     setAnim(false);
@@ -26,11 +27,11 @@ const Home = () => {
     document.addEventListener("mousemove", function (e) {
       move(e);
     });
-    if (window.innerWidth < 900) {
-      document.body.style.overflowY = "scroll";
-    } else {
-      document.body.style.overflow = "hidden";
-    }
+    // if (window.innerWidth < 900) {
+    //   document.body.style.overflowY = "scroll";
+    // } else {
+    //   document.body.style.overflow = "hidden";
+    // }
 
     return () => {
       document.body.style.overflowY = "scroll ";
@@ -86,7 +87,7 @@ const Home = () => {
     let ctx = gsap.context(() => {
       tl.from(body.current, {
         opacity: 0,
-        duration: 0.7,
+        duration: 1,
       })
         .from(
           [imgRef.current, imgRef2.current],
@@ -108,7 +109,14 @@ const Home = () => {
         <div className="follow" ref={cursorRef}></div>
         <div className="page_container">
           <Box className="home_nav">
-            <div className="nav_text" onClick={() => setAnim(true)}>
+            <div
+              className="nav_text"
+              onClick={() => {
+                setAnim(true);
+                setTimeout(() => navigate("/profile"), 3500);
+                gsap.to(body.current,{ opacity:0,duration:3.5 })
+              }}
+            >
               profile
             </div>
             <div className="nav_text" onClick={() => setAnim(true)}>
