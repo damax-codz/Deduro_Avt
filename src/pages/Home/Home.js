@@ -113,8 +113,8 @@ const Home = () => {
               className="nav_text"
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/profile"), 3500);
-                gsap.to(body.current,{ opacity:0,duration:3.5 })
+                setTimeout(() => navigate("/Deduro_Avt/profile"), 3500);
+                gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
               profile
