@@ -51,7 +51,7 @@
   position: relative;
   overflow: hidden;
   display: none;
-  &:after{
+  &::after{
     content: "";
     position: absolute;
     width: 100%;
