@@ -39,7 +39,7 @@ const Profile = () => {
           },
         })
         .to(textscroll.current, {
-          xPercent:-35,
+          xPercent:-25,
           duration: 10,
           scrollTrigger: {
             trigger: ".text_item",

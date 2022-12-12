@@ -9,3 +9,9 @@
     display: none;
     z-index: 1;
   }
+
+  @media (max-width:1024px) {
+    .follow{
+      display: none;
+    }
+  }
