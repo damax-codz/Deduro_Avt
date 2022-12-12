@@ -18,9 +18,9 @@ const Gsap = () => {
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
-    // setTimeout(() => {
-    //   navigate("/Deduro_Avt/home");
-    // }, 15000);
+    setTimeout(() => {
+      navigate("/Deduro_Avt/home");
+    }, 15000);
 
     return () => {
       document.body.style.overflowY = "scroll";

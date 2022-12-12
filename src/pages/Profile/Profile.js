@@ -6,6 +6,7 @@ import "./Profile.scss";
 import gsap from "gsap";
 import Tobi from "./../../component/assets/images/tobi6.jpeg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import MouseFollow from "../../component/MouseFollow/MouseFollow";
 gsap.registerPlugin(ScrollTrigger);
 
 const Profile = () => {
@@ -58,6 +59,7 @@ const Profile = () => {
   return (
     <>
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
+      <MouseFollow />
       <div className="profile_page" ref={body}>
         <div className="page_container">
           <Box className="home_nav">
