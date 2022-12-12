@@ -23,7 +23,7 @@
       width: 100%;
       .nav_text {
         text-transform: uppercase;
-        @include font("Noto Sans Chakma", none, 500, 12px, rgb(0, 0, 0));
+        @include font("Noto Sans Chakma", none, 600, 14px, rgb(0, 0, 0));
         cursor: pointer;
       }
     }
@@ -78,6 +78,7 @@
   }
   .profile_page .page_container .hero_image{
     width: 100%;
+    margin-top: 50px;
   }
   .profile_page .page_container .hero_image .hero_title{
     font-size: 40px;

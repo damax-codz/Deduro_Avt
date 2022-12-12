@@ -18,7 +18,7 @@
       justify-content: space-between;
       .nav_text {
         text-transform: uppercase;
-        @include font("Noto Sans Chakma", none, 500, 12px, rgb(0, 0, 0));
+        @include font("Noto Sans Chakma", none, 600, 14px, rgb(0, 0, 0));
         cursor: pointer;
       }
     }
