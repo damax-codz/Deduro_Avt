@@ -51,7 +51,7 @@
   position: relative;
   overflow: hidden;
   display: none;
-  &::after{
+  &:after{
     content: "";
     position: absolute;
     width: 100%;
@@ -71,5 +71,14 @@
     bottom: 0;
     transform: translateY(100%);
     position: absolute;
+  }
+}
+
+@media (max-width:500px) {
+  .container .name{
+    bottom: 5px;
+    p{
+      font-size: 20px;
+    }
   }
 }
