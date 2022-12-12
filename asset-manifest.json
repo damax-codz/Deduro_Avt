@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/Deduro_Avt/static/css/main.78426c9d.css",
-    "main.js": "/Deduro_Avt/static/js/main.d124425f.js",
+    "main.css": "/Deduro_Avt/static/css/main.12087f4d.css",
+    "main.js": "/Deduro_Avt/static/js/main.259cdbb3.js",
     "static/js/787.61f79330.chunk.js": "/Deduro_Avt/static/js/787.61f79330.chunk.js",
-    "static/media/tobi7.jpg": "/Deduro_Avt/static/media/tobi7.f76d9e02fd6cbd8fb9e5.jpg",
     "static/media/tobi6.jpeg": "/Deduro_Avt/static/media/tobi6.7a74820aba322d824567.jpeg",
     "static/media/tobi1.jpeg": "/Deduro_Avt/static/media/tobi1.8d321c31b2e76d3a4c73.jpeg",
     "static/media/tobi5.jpeg": "/Deduro_Avt/static/media/tobi5.97262b1ca1b25d9800cb.jpeg",
     "static/media/tobi4.jpeg": "/Deduro_Avt/static/media/tobi4.baca9a6382c770df75d8.jpeg",
     "index.html": "/Deduro_Avt/index.html",
-    "main.78426c9d.css.map": "/Deduro_Avt/static/css/main.78426c9d.css.map",
-    "main.d124425f.js.map": "/Deduro_Avt/static/js/main.d124425f.js.map",
+    "main.12087f4d.css.map": "/Deduro_Avt/static/css/main.12087f4d.css.map",
+    "main.259cdbb3.js.map": "/Deduro_Avt/static/js/main.259cdbb3.js.map",
     "787.61f79330.chunk.js.map": "/Deduro_Avt/static/js/787.61f79330.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.78426c9d.css",
-    "static/js/main.d124425f.js"
+    "static/css/main.12087f4d.css",
+    "static/js/main.259cdbb3.js"
   ]
 }
