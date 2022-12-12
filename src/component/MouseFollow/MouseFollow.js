@@ -4,12 +4,11 @@ import "./MouseFollow.scss";
 const MouseFollow = () => {
   const cursorRef = useRef();
 
-
   useEffect(() => {
     document.addEventListener("mousemove", function (e) {
       move(e);
     });
- 
+
     return () => {
       document.body.style.overflowY = "scroll ";
     };
@@ -31,7 +30,11 @@ const MouseFollow = () => {
       var y = !isTouchDevice() ? e.pageY : e.touches[0].pageY;
     } catch (e) {}
 
-    cursorRef.current.style.display = "flex";
+    if (window.innerWidth < 900) {
+      cursorRef.current.style.display = "none";
+    } else {
+      cursorRef.current.style.display = "flex";
+    }
     cursorRef.current.style.left = x + "px";
     cursorRef.current.style.top = y + "px";
 

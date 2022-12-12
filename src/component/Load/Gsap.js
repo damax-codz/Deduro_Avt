@@ -64,11 +64,11 @@ const Gsap = () => {
           },
           ">"
         )
-        .to(
-          imageReveal,
-          { height: "100%", ease: "power2.in", duration: 1.3 },
-          ">"
-        )
+        // .to(
+        //   imageReveal,
+        //   { height: "100%", ease: "power2.in", duration: 1.3 },
+        //   ">"
+        // )
         .to(".name", { opacity: 0 }, "<0.8");
     });
   }, []);
