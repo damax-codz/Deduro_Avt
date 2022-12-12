@@ -4,11 +4,9 @@ import Box from "@mui/material/Box";
 import gsap from "gsap";
 import Tobi from "./../../component/assets/images/tobi4.jpeg";
 import profile from "./../../component/assets/images/tobi5.jpeg";
-import SplitText from "gsap-trial/SplitText";
 import Exit from "../../component/Exit/Exit";
 import { useNavigate } from "react-router";
 
-gsap.registerPlugin(SplitText);
 
 const Home = () => {
   const cursorRef = useRef();

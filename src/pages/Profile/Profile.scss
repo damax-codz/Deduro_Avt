@@ -11,11 +11,16 @@
   min-height: 100vh;
 
   .page_container {
-    padding: 40px 40px 0px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     .home_nav {
       display: flex;
       justify-content: space-between;
+      padding: 30px 30px 0px;
+      width: 100%;
       .nav_text {
         text-transform: uppercase;
         @include font("Noto Sans Chakma", none, 500, 12px, rgb(0, 0, 0));
@@ -23,31 +28,36 @@
       }
     }
     .hero_image {
-      width: 100%;
-      height: 80vh;
+      width: 95%;
+      height: 85vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 25px;
       overflow: hidden;
+      // margin-bottom: 50px;
       img {
         width: 100%;
+
       }
       .hero_title {
-        @include font("Fraunces", serif, 400, 5vw, rgb(0, 0, 0));
+        @include font("Fraunces", serif, 500, 88px, rgb(145, 141, 141));
         position: absolute;
         transform: translateY(-50%);
         margin: 0%;
       }
     }
     .text_scroll {
-      width: 250%;
-      margin-top: 70px;
-      @include font("'Hanken Grotesk", sans-serif, 100, 120px, rgb(0, 0, 0));
-      overflow: hidden;
-      text-transform: capitalize;
-      span {
-        @include font("Fraunces", italic, 400, 100px, rgb(0, 0, 0));
+     
+      .text_item{
+        width: 300%;
+        // margin-top: 170px;
+        @include font("'Hanken Grotesk", sans-serif, 100, 120px, rgb(0, 0, 0));
+        overflow: hidden;
+        text-transform: capitalize;
+        span {
+          @include font("Fraunces", italic, 400, 100px, rgb(0, 0, 0));
+        }
       }
     }
     .extra{
@@ -55,3 +65,22 @@
     }
   }
 }
+
+@media (max-width: 750px) {
+
+  .profile_page .page_container .text_scroll .text_item{
+    font-size: 50px;
+    width: 350%;
+    span{
+    font-size: 50px;
+
+    }
+  }
+  .profile_page .page_container .hero_image{
+    width: 100%;
+  }
+  .profile_page .page_container .hero_image .hero_title{
+    font-size: 40px;
+  }
+}
+

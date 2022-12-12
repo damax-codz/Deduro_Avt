@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Exit from "../../component/Exit/Exit";
 import "./Profile.scss";
 import gsap from "gsap";
-import Tobi from "./../../component/assets/images/tobi7.jpg";
+import Tobi from "./../../component/assets/images/tobi6.jpeg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,26 +26,29 @@ const Profile = () => {
       tl.from(body.current, {
         opacity: 0,
         duration: 1,
-      }).to(img.current, {
-        scale: 1.2,
-        duration:5,
-        scrollTrigger: {
-          trigger: ".hero_image",
-          start: "top top",
-          end:"center top",
-          scrub: 2,
-        },
-      }).to(textscroll.current, {
-        x: `-${textscroll.current.offsetWidth/3}` ,
-        duration:10,
-        scrollTrigger: {
-          trigger: textscroll.current,
-          start: "top bottom",
-          end:"bottom top", 
-          scrub: 1,
-        //   pin:true
-        },
-      });
+      })
+        .to(img.current, {
+          scale: 1.2,
+          duration: 5,
+          scrollTrigger: {
+            trigger: ".hero_image",
+            start: "top top",
+            end: "center top",
+            scrub: 2,
+          },
+        })
+        .to(textscroll.current, {
+          xPercent:-35,
+          duration: 10,
+          scrollTrigger: {
+            trigger: ".text_item",
+            start: "top bottom",
+            end: "bottom top",
+            scrub: 1,
+            // markers: true,
+            //   pin:true
+          },
+        });
     });
     return () => {
       ctx.revert();
@@ -78,12 +81,13 @@ const Profile = () => {
             <p className="hero_title">DEDURO AVT.</p>
           </Box>
 
-          <Box className="text_scroll" ref={textscroll}>
-          Adeduro Tobiloba <span>Avt</span> Adeduro Tobiloba <span>Avt</span>Adeduro Tobiloba 
+          <Box className="text_scroll" >
+            <h2 className="text_item" ref={textscroll}>
+              Adeduro Tobiloba <span>Avt</span> Adeduro Tobiloba{" "}
+              <span>Avt</span>Adeduro Tobiloba
+            </h2>
           </Box>
-          <Box className="extra">
-
-          </Box>
+          <Box className="extra"></Box>
         </div>
       </div>
     </>

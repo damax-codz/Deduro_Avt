@@ -11,7 +11,8 @@
   min-height: 100vh;
 
   .page_container {
-    padding: 40px 40px 0px;
+    padding: 30px 30px 0px;
+    
     .home_nav {
       display: flex;
       justify-content: space-between;
@@ -203,7 +204,7 @@
     font-size: 4vw;
   }
   .home_page .page_container .page_body .left .description_container {
-    left: 50%;
+    left: 55%;
     width: 100%;
   }
   .home_page
@@ -213,7 +214,7 @@
     .description_container
     .description_one
     .description {
-    font-size: 5vw;
+    font-size: 8vw;
   }
   .home_page .page_container .page_body .left .image_description {
     // left: 60%;
@@ -222,4 +223,5 @@
   .home_page .page_container .page_body .profile_demo{
     width: 100%;
   }
+
 }
