@@ -14,7 +14,7 @@ const Gsap = () => {
   const img2 = useRef();
   const tl = gsap.timeline();
   const navigate = useNavigate();
-  const imageReveal = CSSRulePlugin.getRule(".img_container:after");
+  const imageReveal = CSSRulePlugin.getRule(".img_container::after");
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
