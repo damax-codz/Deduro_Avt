@@ -4,11 +4,13 @@ import { useNavigate } from "react-router";
 import Exit from "../../component/Exit/Exit";
 import "./Profile.scss";
 import gsap from "gsap";
-import Tobi from "./../../component/assets/images/tobi6.jpeg";
+import Tobi from "./../../component/assets/images/tobi3.jpeg";
 import Tobitwo from "./../../component/assets/images/tobi9.JPG";
 import Award from "./../../component/assets/images/tobi10.JPG";
+import work from "./../../component/assets/images/tobi6.jpeg";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
+import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 gsap.registerPlugin(ScrollTrigger);
 
 const Profile = () => {
@@ -17,6 +19,7 @@ const Profile = () => {
   const body = useRef();
   const textscroll = useRef();
   const img = useRef();
+  const workRef = useRef();
   const tl = gsap.timeline();
 
   function changeAnim() {
@@ -30,9 +33,14 @@ const Profile = () => {
         opacity: 0,
         duration: 1,
       })
-      .from(img.current,{
-        scale:1.1,duration:1
-      },"<")
+        .from(
+          img.current,
+          {
+            scale: 1.1,
+            duration: 1,
+          },
+          "<"
+        )
         .to(img.current, {
           scale: 1.2,
           duration: 5,
@@ -52,9 +60,23 @@ const Profile = () => {
             end: "bottom top",
             scrub: 1,
             // markers: true,
-            //   pin:true
+              // pin:true,
+              // pinSpacer:false,
           },
-        });
+        })
+        .to(workRef.current,{
+          xPercent:-50,
+          duration:10,
+          scrollTrigger:{
+            trigger: workRef.current,
+            start: "50% 50%",
+            end: "bottom 10%",
+            pinSpacing: false,
+            scrub: 1,
+            markers:true,
+            pin:true,
+          }
+        })
     });
     return () => {
       ctx.revert();
@@ -100,11 +122,27 @@ const Profile = () => {
             </div>
             <div className="intro_text_container">
               <div className="text_one">
-                <h2  className="text_title">Est saepe, ipsam eveniet suscipit quidem, ratione</h2>
-                <p>— dolor sit amet consectetur adipisicing elit. Deleniti deserunt harum cumque, quo aut nobis rerum officia velit temporibus distinctio beatae accusamus, necessitatibus enim expedita? Sequi ratione at harum repellendus animi et eos voluptatem, sint aspernatur molestias. Est saepe, ipsam eveniet suscipit quidem, ratione quia animi quae</p>
+                <h2 className="text_title">
+                  Est saepe, ipsam eveniet suscipit quidem, ratione
+                </h2>
+                <p>
+                  — dolor sit amet consectetur adipisicing elit. Deleniti
+                  deserunt harum cumque, quo aut nobis rerum officia velit
+                  temporibus distinctio beatae accusamus, necessitatibus enim
+                  expedita? Sequi ratione at harum repellendus animi et eos
+                  voluptatem, sint aspernatur molestias. Est saepe, ipsam
+                  eveniet suscipit quidem, ratione quia animi quae
+                </p>
               </div>
               <div className="text_one">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti deserunt harum cumque, quo aut nobis rerum officia velit temporibus distinctio beatae accusamus, necessitatibus enim expedita? Sequi ratione at harum repellendus animi et eos voluptatem, sint aspernatur molestias. Est saepe, ipsam eveniet suscipit quidem, ratione quia animi</p>
+                <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Deleniti deserunt harum cumque, quo aut nobis rerum officia
+                  velit temporibus distinctio beatae accusamus, necessitatibus
+                  enim expedita? Sequi ratione at harum repellendus animi et eos
+                  voluptatem, sint aspernatur molestias. Est saepe, ipsam
+                  eveniet suscipit quidem, ratione quia animi
+                </p>
               </div>
             </div>
           </Box>
@@ -112,6 +150,114 @@ const Profile = () => {
           <Box className="award_container">
             <img src={Award} alt="model" />
             <p>DEDURO X xAWARD DATE</p>
+          </Box>
+
+          <Box className="inspiration">
+            <p className="inspiration_text">
+              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              doloremque reprehenderit officia delectus enim at quo modi impedit
+              blanditiis soluta. Alias ut praesentium quia voluptas
+            </p>
+            <p className="inspiration_story">
+              officia delectus enim at quo modi impedit blanditiis soluta. Alias
+              ut praesentium quia voluptas dolor ipsum ab enim earum doloribus
+              facere eius assumenda eaque, aliquam soluta consequuntur dolore
+              quae autem, molestiae, accusantium quo eligendi asperiores
+              dignissimos non possimus! Nobis!
+            </p>
+          </Box>
+
+          <Box className="work_container">
+            <Box className="work" ref={workRef}>
+              <Box className="box_one">
+                <div className="box_one_image">
+                  <img src={work} alt="model" />
+                  <p>Deduro AVT. date by ___-___</p>
+                </div>
+
+                <div className="box_one_text">
+                  <p className="work_start">WORK</p>
+                  <p className="work_center">
+                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
+                    ipsum ab enim earum doloribus facere eius assumenda eaque,
+                    aliquam soluta consequuntur 
+                  </p>
+                  <div className="work_end">
+                    <button>
+                      <ArrowRightAltIcon />
+                    </button>
+                    onsequuntur dolore quae autem,
+                  </div>
+                </div>
+              </Box>
+
+              <Box className="box_one">
+                <div className="box_one_image">
+                  <img src={work} alt="model" />
+                  <p>Deduro AVT. date by ___-___</p>
+                </div>
+
+                <div className="box_one_text">
+                  <p className="work_start">WORK</p>
+                  <p className="work_center">
+                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
+                    ipsum ab enim earum doloribus facere eius assumenda eaque,
+                    aliquam soluta consequuntur 
+                  </p>
+                  <div className="work_end">
+                    <button>
+                      <ArrowRightAltIcon />
+                    </button>
+                    onsequuntur dolore quae autem,
+                  </div>
+                </div>
+              </Box>
+
+              <Box className="box_one">
+                <div className="box_one_image">
+                  <img src={work} alt="model" />
+                  <p>Deduro AVT. date by ___-___</p>
+                </div>
+
+                <div className="box_one_text">
+                  <p className="work_start">WORK</p>
+                  <p className="work_center">
+                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
+                    ipsum ab enim earum doloribus facere eius assumenda eaque,
+                    aliquam soluta consequuntur 
+                  </p>
+                  <div className="work_end">
+                    <button>
+                      <ArrowRightAltIcon />
+                    </button>
+                    onsequuntur dolore quae autem,
+                  </div>
+                </div>
+              </Box>
+              
+              <Box className="box_one">
+                <div className="box_one_image">
+                  <img src={work} alt="model" />
+                  <p>Deduro AVT. date by ___-___</p>
+                </div>
+
+                <div className="box_one_text">
+                  <p className="work_start">WORK</p>
+                  <p className="work_center">
+                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
+                    ipsum ab enim earum doloribus facere eius assumenda eaque,
+                    aliquam soluta consequuntur 
+                  </p>
+                  <div className="work_end">
+                    <button>
+                      <ArrowRightAltIcon />
+                    </button>
+                    onsequuntur dolore quae autem,
+                  </div>
+                </div>
+              </Box>
+
+            </Box>
           </Box>
         </div>
       </div>
