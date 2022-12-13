@@ -30,6 +30,9 @@ const Profile = () => {
         opacity: 0,
         duration: 1,
       })
+      .from(img.current,{
+        scale:1.1,duration:1
+      },"<")
         .to(img.current, {
           scale: 1.2,
           duration: 5,
