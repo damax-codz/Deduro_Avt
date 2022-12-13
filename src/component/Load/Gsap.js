@@ -6,7 +6,6 @@ import { Box } from "@mui/material";
 import Tobi from "../../component/assets/images/tobi4.jpeg";
 import Tobisec from "../../component/assets/images/tobi6.jpeg";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-
 gsap.registerPlugin(CSSRulePlugin);
 
 const Gsap = () => {
@@ -14,10 +13,7 @@ const Gsap = () => {
   const img2 = useRef();
   const tl = gsap.timeline();
   const navigate = useNavigate();
-  const imageReveal = CSSRulePlugin.getRule(".img_container:after");
-
-  // const imgcover = document.querySelector("img_container")
-  // const imageReveal = window.getComputedStyle(imgcover, '::after')
+  // const imageReveal =  CSSRulePlugin.getRule(".img_container:after"); ;
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -38,7 +34,7 @@ const Gsap = () => {
         .to(".wrapper", { y: -20, opacity: "0", display: "none" }, ">")
         .to(".img_container", { display: "flex", delay: 0.5 }, ">")
         .to(
-          imageReveal,
+          CSSRulePlugin.getRule(".img_container::after"),
           { height: "0%", ease: "power2.in", duration: 1.2 },
           ">"
         )
@@ -58,7 +54,7 @@ const Gsap = () => {
           "<"
         )
         .to(
-          imageReveal,
+          CSSRulePlugin.getRule(".img_container::after"),
           {
             bottom: 0,
             top: "auto",
