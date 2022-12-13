@@ -123,7 +123,7 @@ const Home = () => {
               </Box>
 
               <Box className="btn_container">
-                <button>Book</button>
+                <button>Credits</button>
               </Box>
             </div>
 
