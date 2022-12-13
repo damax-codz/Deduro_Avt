@@ -1,22 +1,31 @@
 {
   "files": {
-    "main.css": "/Deduro_Avt/static/css/main.1133ddbf.css",
-    "main.js": "/Deduro_Avt/static/js/main.5af71bd0.js",
+    "main.css": "/Deduro_Avt/static/css/main.42f793f2.css",
+    "main.js": "/Deduro_Avt/static/js/main.bc2aeb43.js",
     "static/js/787.61f79330.chunk.js": "/Deduro_Avt/static/js/787.61f79330.chunk.js",
     "static/media/tobi10.JPG": "/Deduro_Avt/static/media/tobi10.efeebc2ec5dcf480711d.JPG",
+    "static/media/gtco2.JPG": "/Deduro_Avt/static/media/gtco2.d075e742a0b6396b6dcc.JPG",
+    "static/media/gtco4.JPG": "/Deduro_Avt/static/media/gtco4.893975d1f5396e468844.JPG",
+    "static/media/gtco1.JPG": "/Deduro_Avt/static/media/gtco1.44a60d205e10a4989723.JPG",
+    "static/media/bala2.JPG": "/Deduro_Avt/static/media/bala2.392a2ebf97ebc654c91c.JPG",
+    "static/media/bala3.JPG": "/Deduro_Avt/static/media/bala3.1db47eae45c4e05921e9.JPG",
+    "static/media/tobi11.JPG": "/Deduro_Avt/static/media/tobi11.3a4449f45160c98daad7.JPG",
+    "static/media/bala1.JPG": "/Deduro_Avt/static/media/bala1.b83d988beea4a7cee3db.JPG",
     "static/media/tobi3.jpeg": "/Deduro_Avt/static/media/tobi3.6801b0396098113b9e4d.jpeg",
     "static/media/tobi6.jpeg": "/Deduro_Avt/static/media/tobi6.7a74820aba322d824567.jpeg",
+    "static/media/bala_logo.png": "/Deduro_Avt/static/media/bala_logo.e1cc4e04e274c8878946.png",
     "static/media/tobi9.JPG": "/Deduro_Avt/static/media/tobi9.614f5eeae118ba2630ff.JPG",
     "static/media/tobi1.jpeg": "/Deduro_Avt/static/media/tobi1.8d321c31b2e76d3a4c73.jpeg",
     "static/media/tobi5.jpeg": "/Deduro_Avt/static/media/tobi5.97262b1ca1b25d9800cb.jpeg",
     "static/media/tobi4.jpeg": "/Deduro_Avt/static/media/tobi4.baca9a6382c770df75d8.jpeg",
+    "static/media/gt.png": "/Deduro_Avt/static/media/gt.3c84c504b1cbd7d8f3af.png",
     "index.html": "/Deduro_Avt/index.html",
-    "main.1133ddbf.css.map": "/Deduro_Avt/static/css/main.1133ddbf.css.map",
-    "main.5af71bd0.js.map": "/Deduro_Avt/static/js/main.5af71bd0.js.map",
+    "main.42f793f2.css.map": "/Deduro_Avt/static/css/main.42f793f2.css.map",
+    "main.bc2aeb43.js.map": "/Deduro_Avt/static/js/main.bc2aeb43.js.map",
     "787.61f79330.chunk.js.map": "/Deduro_Avt/static/js/787.61f79330.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1133ddbf.css",
-    "static/js/main.5af71bd0.js"
+    "static/css/main.42f793f2.css",
+    "static/js/main.bc2aeb43.js"
   ]
 }
