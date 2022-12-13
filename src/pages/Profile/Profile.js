@@ -73,7 +73,7 @@ const Profile = () => {
             end: "bottom 10%",
             pinSpacing: false,
             scrub: 1,
-            markers:true,
+            // markers:true,
             pin:true,
           }
         })
@@ -234,7 +234,7 @@ const Profile = () => {
                   </div>
                 </div>
               </Box>
-              
+
               <Box className="box_one">
                 <div className="box_one_image">
                   <img src={work} alt="model" />
