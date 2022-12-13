@@ -15,12 +15,16 @@ const Gsap = () => {
   const tl = gsap.timeline();
   const navigate = useNavigate();
   const imageReveal = CSSRulePlugin.getRule(".img_container:after");
+
+  // const imgcover = document.querySelector("img_container")
+  // const imageReveal = window.getComputedStyle(imgcover, '::after')
+
   useEffect(() => {
     document.body.style.overflow = "hidden";
 
-    // setTimeout(() => {
-    //   navigate("/Deduro_Avt/home");
-    // }, 15000);
+    setTimeout(() => {
+      navigate("/Deduro_Avt/home");
+    }, 15000);
 
     return () => {
       document.body.style.overflowY = "scroll";
