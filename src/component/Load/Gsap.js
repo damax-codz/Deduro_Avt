@@ -32,6 +32,13 @@ const Gsap = () => {
       tl.to(".mun", { yPercent: -2100, duration: 8, ease: "none" })
         .to(".sup", { y: -70, duration: 0.5, delay: 7.6 }, "<")
         .to(".wrapper", { y: -20, opacity: "0", display: "none" }, ">")
+        .set(  CSSRulePlugin.getRule(".img_container::after"),{
+          position: "absolute",
+          width: "100%",
+          height: "100%",
+          top: 0,
+          backgroundColor: "black",
+        },">")
         .to(".img_container", { display: "flex", delay: 0.5 }, ">")
         .to(
           CSSRulePlugin.getRule(".img_container::after"),
