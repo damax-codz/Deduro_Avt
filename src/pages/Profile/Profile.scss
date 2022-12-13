@@ -19,7 +19,7 @@
     .home_nav {
       display: flex;
       justify-content: space-between;
-      padding: 30px 30px 0px;
+      padding: 48px 48px 0px;
       width: 100%;
       .nav_text {
         text-transform: uppercase;
@@ -38,7 +38,6 @@
       // margin-bottom: 50px;
       img {
         width: 100%;
-
       }
       .hero_title {
         @include font("Fraunces", serif, 500, 88px, rgb(145, 141, 141));
@@ -48,9 +47,9 @@
       }
     }
     .text_scroll {
-     overflow: hidden;
-      .text_item{
-        width: 300%;
+      overflow: hidden;
+      .text_item {
+        width: 400%;
         // margin-top: 170px;
         @include font("'Hanken Grotesk", sans-serif, 100, 120px, rgb(0, 0, 0));
         overflow: hidden;
@@ -60,40 +59,125 @@
         }
       }
     }
-    .extra{
-        height: 100vh;
+    .profile_intro {
+      display: flex;
+      justify-content: center;
+      padding: 0px 40px;
+      margin: 0px auto 120px;
+      width: 100%;
+      .intro_image_container {
+        width: 100%;
+        max-width: 550px;
+        height: 550px;
+        margin-right: 40px;
+        .intro_image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .intro_text_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0px 28px;
+        max-width: 460px;
+        height: 550px;
+        .text_one {
+          .text_title {
+            @include font("Fraunces", none, 600, 36px, rgb(0, 0, 0));
+          }
+          p {
+            @include font(
+              "Noto Sans Chakma",
+              none,
+              400,
+              15px,
+              rgba(0, 0, 0, 0.634)
+            );
+          }
+        }
+      }
+    }
+    .award_container {
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      margin-bottom: 100px;
+      position: relative;
+      img {
+        width: 100%;
+        filter: brightness(0.6);
+      }
+      p {
+        position: absolute;
+        bottom: 20px;
+        right: 66px;
+        margin: 0;
+        @include font(
+          "Noto Sans Chakma",
+          none,
+          500,
+          17px,
+          rgba(255, 255, 255, 0.634)
+        );
+      }
     }
   }
 }
 
 @media (max-width: 800px) {
-
-  .profile_page .page_container .text_scroll .text_item{
+  .profile_page .page_container .text_scroll .text_item {
     font-size: 50px;
     width: 250%;
-    span{
-    font-size: 50px;
+    span {
+      font-size: 50px;
     }
   }
-  .profile_page .page_container .hero_image{
+  .profile_page .page_container .hero_image {
     width: 100%;
     margin-top: 50px;
   }
-  .profile_page .page_container .hero_image .hero_title{
+  .profile_page .page_container .hero_image .hero_title {
     font-size: 40px;
   }
+  .profile_page .page_container {
+    padding: 0px 0px 0px;
+  }
+  .profile_page .page_container .home_nav {
+    padding: 28px 28px;
+  }
+  .profile_page .page_container .profile_intro {
+    flex-direction: column;
+    margin: 0px 0px 0px;
+  }
+  .profile_page .page_container .profile_intro .intro_image_container {
+    margin-right: 0px;
+    max-width: none;
+    height: 450px;
+  }
+  .profile_page .page_container .profile_intro .intro_text_container {
+    max-width: none;
+    justify-content: flex-start;
+  }
+  .profile_page
+    .page_container
+    .profile_intro
+    .intro_text_container
+    .text_one
+    .text_title {
+    font-size: 26px;
+  }
+  .profile_page .page_container .award_container p{
+    display: none;
+  }
 }
-
 
 @media (max-width: 500px) {
-
-  .profile_page .page_container .text_scroll .text_item{
+  .profile_page .page_container .text_scroll .text_item {
     font-size: 50px;
     width: 350%;
-    span{
-    font-size: 50px;
+    span {
+      font-size: 50px;
     }
   }
-
 }
-

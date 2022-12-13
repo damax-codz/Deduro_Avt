@@ -5,6 +5,8 @@ import Exit from "../../component/Exit/Exit";
 import "./Profile.scss";
 import gsap from "gsap";
 import Tobi from "./../../component/assets/images/tobi6.jpeg";
+import Tobitwo from "./../../component/assets/images/tobi9.JPG";
+import Award from "./../../component/assets/images/tobi10.JPG";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 gsap.registerPlugin(ScrollTrigger);
@@ -39,7 +41,7 @@ const Profile = () => {
           },
         })
         .to(textscroll.current, {
-          xPercent:-25,
+          xPercent: -25,
           duration: 10,
           scrollTrigger: {
             trigger: ".text_item",
@@ -83,13 +85,31 @@ const Profile = () => {
             <p className="hero_title">DEDURO AVT.</p>
           </Box>
 
-          <Box className="text_scroll" >
+          <Box className="text_scroll">
             <h2 className="text_item" ref={textscroll}>
               Adeduro Tobiloba <span>Avt</span> Adeduro Tobiloba{" "}
               <span>Avt</span>Adeduro Tobiloba
             </h2>
           </Box>
-          <Box className="extra"></Box>
+          <Box className="profile_intro">
+            <div className="intro_image_container">
+              <img src={Tobitwo} alt="model" className="intro_image" />
+            </div>
+            <div className="intro_text_container">
+              <div className="text_one">
+                <h2  className="text_title">Est saepe, ipsam eveniet suscipit quidem, ratione</h2>
+                <p>— dolor sit amet consectetur adipisicing elit. Deleniti deserunt harum cumque, quo aut nobis rerum officia velit temporibus distinctio beatae accusamus, necessitatibus enim expedita? Sequi ratione at harum repellendus animi et eos voluptatem, sint aspernatur molestias. Est saepe, ipsam eveniet suscipit quidem, ratione quia animi quae</p>
+              </div>
+              <div className="text_one">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti deserunt harum cumque, quo aut nobis rerum officia velit temporibus distinctio beatae accusamus, necessitatibus enim expedita? Sequi ratione at harum repellendus animi et eos voluptatem, sint aspernatur molestias. Est saepe, ipsam eveniet suscipit quidem, ratione quia animi</p>
+              </div>
+            </div>
+          </Box>
+
+          <Box className="award_container">
+            <img src={Award} alt="model" />
+            <p>DEDURO X xAWARD DATE</p>
+          </Box>
         </div>
       </div>
     </>
