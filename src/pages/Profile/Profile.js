@@ -8,9 +8,22 @@ import Tobi from "./../../component/assets/images/tobi3.jpeg";
 import Tobitwo from "./../../component/assets/images/tobi9.JPG";
 import Award from "./../../component/assets/images/tobi10.JPG";
 import work from "./../../component/assets/images/tobi6.jpeg";
+import GtLogo from "./../../component/assets/images/gt.png";
+import gtone from "./../../component/assets/images/gtco1.JPG";
+import gttwo from "./../../component/assets/images/gtco2.JPG";
+import gtfour from "./../../component/assets/images/gtco4.JPG";
+import balaone from "./../../component/assets/images/bala1.JPG";
+import balatwo from "./../../component/assets/images/bala2.JPG";
+import balathree from "./../../component/assets/images/bala3.JPG";
+import chillone from "./../../component/assets/images/tobi9.JPG";
+import chilltwo from "./../../component/assets/images/tobi5.jpeg";
+import chillthree from "./../../component/assets/images/tobi3.jpeg";
+import chillfour from "./../../component/assets/images/tobi11.JPG";
+import balaLogo from "./../../component/assets/images/bala_logo.png";
+
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
 gsap.registerPlugin(ScrollTrigger);
 
 const Profile = () => {
@@ -21,6 +34,23 @@ const Profile = () => {
   const img = useRef();
   const workRef = useRef();
   const tl = gsap.timeline();
+
+  const gtcoImages = [
+    { name: gtone, style: "md" },
+    { name: gtfour, style: "lg" },
+    { name: gttwo, style: "sm" },
+  ];
+  const balaImages = [
+    { name: balaone, style: "md" },
+    { name: balatwo, style: "lg" },
+    { name: balathree, style: "sm" },
+  ];
+  const chillImages = [
+    { name: chillone, style: "md" },
+    { name: chilltwo, style: "lg" },
+    { name: chillthree, style: "sm" },
+    { name: chillfour, style: "lg" },
+  ];
 
   function changeAnim() {
     setAnim(false);
@@ -60,27 +90,32 @@ const Profile = () => {
             end: "bottom top",
             scrub: 1,
             // markers: true,
-              // pin:true,
-              // pinSpacer:false,
+            // pin:true,
+            // pinSpacer:false,
           },
-        })
-        .to(workRef.current,{
-          xPercent:-50,
-          duration:10,
-          scrollTrigger:{
-            trigger: workRef.current,
-            start: "50% 50%",
-            end: "bottom 10%",
-            pinSpacing: false,
-            scrub: 1,
-            // markers:true,
-            pin:true,
-          }
-        })
+        });
     });
     return () => {
       ctx.revert();
     };
+  }, []);
+
+  useLayoutEffect(() => {
+    if (window.innerWidth > 800) {
+      tl.to(workRef.current, {
+        xPercent: -85,
+        duration: 20,
+        scrollTrigger: {
+          trigger: workRef.current,
+          start: "50% 50%",
+          end: "+=4000px",
+          scrub: 10,
+          // markers:true,
+          pin: true,
+        },
+      });
+    } else {
+    }
   }, []);
 
   return (
@@ -168,96 +203,127 @@ const Profile = () => {
           </Box>
 
           <Box className="work_container">
-            <Box className="work" ref={workRef}>
-              <Box className="box_one">
-                <div className="box_one_image">
-                  <img src={work} alt="model" />
-                  <p>Deduro AVT. date by ___-___</p>
-                </div>
-
-                <div className="box_one_text">
-                  <p className="work_start">WORK</p>
-                  <p className="work_center">
-                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
-                    ipsum ab enim earum doloribus facere eius assumenda eaque,
-                    aliquam soluta consequuntur 
-                  </p>
-                  <div className="work_end">
-                    <button>
-                      <ArrowRightAltIcon />
-                    </button>
-                    onsequuntur dolore quae autem,
+            {window.innerWidth > 800 ? (
+              <Box className="work" ref={workRef}>
+                <Box className="box_one">
+                  <div className="box_one_image">
+                    <img src={work} alt="model" />
+                    <p>Deduro AVT. date by ___-___</p>
                   </div>
-                </div>
-              </Box>
 
-              <Box className="box_one">
-                <div className="box_one_image">
-                  <img src={work} alt="model" />
-                  <p>Deduro AVT. date by ___-___</p>
-                </div>
-
-                <div className="box_one_text">
-                  <p className="work_start">WORK</p>
-                  <p className="work_center">
-                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
-                    ipsum ab enim earum doloribus facere eius assumenda eaque,
-                    aliquam soluta consequuntur 
-                  </p>
-                  <div className="work_end">
-                    <button>
-                      <ArrowRightAltIcon />
-                    </button>
-                    onsequuntur dolore quae autem,
+                  <div className="box_one_text">
+                    <p className="work_start">WORK</p>
+                    <p className="work_center">
+                      blanditiis soluta. Alias ut praesentium quia voluptas
+                      dolor ipsum ab enim earum doloribus facere eius assumenda
+                      eaque, aliquam soluta consequuntur
+                    </p>
+                    <div className="work_end">
+                      <button>
+                        <ArrowRightAltIcon />
+                      </button>
+                      onsequuntur dolore quae autem,
+                    </div>
                   </div>
-                </div>
-              </Box>
+                </Box>
 
-              <Box className="box_one">
-                <div className="box_one_image">
-                  <img src={work} alt="model" />
-                  <p>Deduro AVT. date by ___-___</p>
-                </div>
-
-                <div className="box_one_text">
-                  <p className="work_start">WORK</p>
-                  <p className="work_center">
-                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
-                    ipsum ab enim earum doloribus facere eius assumenda eaque,
-                    aliquam soluta consequuntur 
-                  </p>
-                  <div className="work_end">
-                    <button>
-                      <ArrowRightAltIcon />
-                    </button>
-                    onsequuntur dolore quae autem,
+                <Box className="category">
+                  <div className="category_title">
+                    <p>GTCO</p>
+                    <img src={GtLogo} alt="gt" />
                   </div>
-                </div>
-              </Box>
 
-              <Box className="box_one">
-                <div className="box_one_image">
-                  <img src={work} alt="model" />
-                  <p>Deduro AVT. date by ___-___</p>
-                </div>
-
-                <div className="box_one_text">
-                  <p className="work_start">WORK</p>
-                  <p className="work_center">
-                    blanditiis soluta. Alias ut praesentium quia voluptas dolor
-                    ipsum ab enim earum doloribus facere eius assumenda eaque,
-                    aliquam soluta consequuntur 
-                  </p>
-                  <div className="work_end">
-                    <button>
-                      <ArrowRightAltIcon />
-                    </button>
-                    onsequuntur dolore quae autem,
+                  <div className="category_images">
+                    {gtcoImages.map((item, index) => {
+                      return (
+                        <div
+                          className={item.style}
+                          key={index}
+                          style={{ backgroundImage: `url("${item.name}")` }}
+                        ></div>
+                      );
+                    })}
                   </div>
-                </div>
-              </Box>
+                </Box>
 
-            </Box>
+                <Box className="category">
+                  <div className="category_title">
+                    <p>BaLacLaVa</p>
+                    <img src={balaLogo} alt="gt" />
+                  </div>
+
+                  <div className="category_images">
+                    {balaImages.map((item, index) => {
+                      return (
+                        <div
+                          className={item.style}
+                          key={index}
+                          style={{ backgroundImage: `url("${item.name}")` }}
+                        ></div>
+                      );
+                    })}
+                  </div>
+                </Box>
+
+                <Box className="category">
+                  <div className="category_title">
+                    <p>LOREM</p>
+                    {/* <img src={GtLogo} alt="gt" /> */}
+                  </div>
+
+                  <div className="category_images">
+                    {chillImages.map((item, index) => {
+                      return (
+                        <div
+                          className={item.style}
+                          key={index}
+                          style={{ backgroundImage: `url("${item.name}")` }}
+                        ></div>
+                      );
+                    })}
+                  </div>
+                </Box>
+              </Box>
+            ) : (
+              <Box className="work mobile">
+                <Box className="box_one">
+                  <div className="box_one_image">
+                    <img src={work} alt="model" />
+                    <p>Deduro AVT. date by ___-___</p>
+                  </div>
+
+                  <div className="box_one_text">
+                    <p className="work_start">WORK</p>
+                    <p className="work_center">
+                      blanditiis soluta. Alias ut praesentium quia voluptas
+                      dolor ipsum ab enim earum doloribus facere eius assumenda
+                      eaque, aliquam soluta consequuntur
+                    </p>
+                    <div className="work_end">
+                      <button>
+                        <ArrowRightAltIcon />
+                      </button>
+                      onsequuntur dolore quae autem,
+                    </div>
+                  </div>
+                </Box>
+
+                <Box className="work_list">
+                  <p>GTCO</p>
+                  <p>BALACLAVA</p>
+                  <p>LOREM</p>
+                  <p>LOREM</p>
+                  <p>LOREM</p>
+                  <p>LOREM</p>
+                </Box>
+              </Box>
+            )}
+          </Box>
+          <Box className="footer">
+            <button>CREDIT</button>
+            <p>
+              Thank <span>you!</span>
+            </p>
           </Box>
         </div>
       </div>

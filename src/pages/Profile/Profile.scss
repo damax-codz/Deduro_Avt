@@ -29,7 +29,7 @@
     }
     .hero_image {
       width: 95%;
-      height: 85vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -142,6 +142,7 @@
         width: 100%;
         max-width: 340px;
         // height: 550px;
+        margin-left: auto;
         @include font(
           "Noto Sans Chakma",
           none,
@@ -153,18 +154,24 @@
     }
 
     .work_container {
-      margin-bottom: 1000px;
+      margin-bottom: 100px;
+      .mobile{
+        flex-direction: column;
+      }
       .work {
         height: 500px;
-        width: 300%;
+        width: 100%;
         display: flex;
-        
+        flex-wrap: nowrap;
+        overflow: hidden;
+        transform: translateX(43%);
+
         .box_one {
           height: 100%;
-          // width: 100vw;
+          width: 100vw;
           display: flex;
           justify-content: space-between;
-          padding: 0px 100px;
+          padding: 0px 90px;
           .box_one_image {
             width: 500px;
             height: 500px;
@@ -243,6 +250,90 @@
             }
           }
         }
+        .work_list{
+          p{
+            @include font(
+              "Fondamento",
+              none,
+              600,
+              40px,
+              rgba(0, 0, 0, 0.743)
+            );
+            margin-left: 40px;
+          }
+        }
+        .category {
+          height: 100%;
+          // width: 100vw;
+          display: flex;
+          justify-content: space-between;
+          padding: 0px 90px;
+          .category_title {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-right: 100px;
+            p {
+              @include font("Fraunces", none, 500, 130px, rgb(0, 0, 0));
+              margin: 0%;
+            }
+            img {
+              margin-left: 150px;
+            }
+          }
+          .category_images {
+            display: flex;
+            height: 100%;
+            div {
+              height: 100%;
+              margin: 0px 20px;
+              overflow: hidden;
+              .category_pics {
+                width: 100%;
+              }
+            }
+            .sm {
+              width: 400px;
+            }
+            .md {
+              width: 500px;
+            }
+            .lg{
+              width: 600px;
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      display: flex;
+      align-items: center;
+      width: 100%;
+    justify-content: center;
+
+      button{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.455);
+        background-color: rgba(245, 245, 245, 0.681);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        @include font(
+          "Noto Sans Chakma",
+          none,
+          200,
+          12px,
+          rgba(0, 0, 0, 0.743))
+      }
+      p{
+        @include font("Fraunces", none, 500, 150px, rgb(0, 0, 0));
+        margin: 0%;
+        span{
+          font-style: italic;
+        }
       }
     }
   }
@@ -316,6 +407,27 @@
   .profile_page .page_container .award_container {
     height: 250px;
     margin-bottom: 20px;
+  }
+
+  .profile_page .page_container .work_container .work{
+    transform: translateX(0px);
+  }
+  .profile_page .page_container .work_container .work{
+    height: auto;
+  }
+  .profile_page .page_container .work_container .work .box_one{
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+  .profile_page .page_container .work_container .work .box_one .box_one_image{
+    width: 350px;
+    height: 350px;
+  }
+  .profile_page .page_container .footer p{
+    font-size: 50px;
+  }
+  .profile_page .page_container .footer{
+    justify-content: space-between;
   }
 }
 
