@@ -1,0 +1,180 @@
+@mixin font($f, $s, $w, $size, $c) {
+  font-family: $f;
+  font-style: $s;
+  font-weight: $w;
+  font-size: $size;
+  color: $c;
+}
+
+.gallery_page {
+  background-color: rgba(245, 245, 245, 0.681);
+  min-height: 100vh;
+  .home_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 48px 48px 0px;
+    width: 100%;
+    position: sticky;
+    top: 1px;
+    .nav_text {
+      text-transform: uppercase;
+      @include font("Noto Sans Chakma", none, 600, 14px, rgb(0, 0, 0));
+      cursor: pointer;
+    }
+  }
+  .extra {
+    height: 100vh;
+  }
+  .gallery_container {
+    height: 80vh;
+    margin-left: 48px;
+    margin-top: 40px;
+    display: flex;
+    width: 600%;
+    flex-wrap: nowrap;
+    .container_text {
+      height: 85%;
+      display: flex;
+      flex-direction: column;
+      margin-right: 150px;
+      flex-shrink: 0;
+      .text_one {
+        @include font(
+          "Noto Sans Chakma",
+          none,
+          500,
+          15px,
+          rgba(0, 0, 0, 0.449)
+        );
+      width: 380px;
+
+      }
+      .text_two {
+        @include font("Fraunces", none, 600, 34px, rgb(0, 0, 0));
+      width: 380px;
+
+      }
+      button {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        border: 1px solid rgba(0, 0, 0, 0.455);
+        background-color: rgba(245, 245, 245, 0.681);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include font(
+          "Noto Sans Chakma",
+          none,
+          200,
+          12px,
+          rgba(0, 0, 0, 0.743)
+        );
+        text-transform: uppercase;
+        cursor: pointer;
+        margin-right: 5px;
+      }
+    }
+    .container_images {
+      height: 85%;
+      display: flex;
+      .panel {
+        height: 100%;
+        margin: 0px 20px;
+        background-position: center;
+        background-size: contain;
+        position: relative;
+
+      }
+      .sm {
+        width: 400px;
+      }
+      .md {
+        width: 600px;
+      }
+      .lg {
+        width: 800px;
+      }
+      .go_home{
+        height: 100%;
+        width: calc(80vh - 60px);
+        background-color: #121821;
+        border-radius: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p{
+          @include font(
+            "Noto Sans Chakma",
+            none,
+            600,
+            30px,
+            rgb(255, 255, 255)
+          );
+        }
+        button{
+          @include font(
+            "Noto Sans Chakma",
+            none,
+            300,
+            15px,
+            rgb(255, 255, 255)
+          );
+          width: 100px;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: inherit;
+          border: 1px solid white;
+          border-radius: 20px;
+          padding: 0px 5px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+
+@media (max-width:800px) {
+  .gallery_page .gallery_container{
+    flex-direction: column;
+    margin-left: 0%;
+  }
+  .gallery_page .gallery_container .container_images{
+    flex-direction: column;
+  }
+  .gallery_page .gallery_container .container_images .lg{
+    width: 100%;
+    height: 600px;
+  }
+  .gallery_page .gallery_container .container_images .md{
+    width: 100%;
+    height: 400px;
+  }
+  .gallery_page .gallery_container .container_images .sm{
+    width: 100%;
+    height: 300px;
+  }
+  .gallery_page .gallery_container{
+    height: auto;
+  }
+  .gallery_page .gallery_container .container_images{
+    height: auto;
+  }
+  .gallery_page .gallery_container .container_images .panel{
+    margin: 0%;
+  }
+  .gallery_page .gallery_container .container_text{
+    margin-left: 48px;
+    margin-bottom: 40px;
+  }
+  .gallery_page .home_nav{
+    position: relative;
+  }
+  .gallery_page .gallery_container .container_images .go_home{
+    display: none;
+  }
+}

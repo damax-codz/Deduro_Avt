@@ -15,11 +15,15 @@ import gtfour from "./../../component/assets/images/gtco4.JPG";
 import balaone from "./../../component/assets/images/bala1.JPG";
 import balatwo from "./../../component/assets/images/bala2.JPG";
 import balathree from "./../../component/assets/images/bala3.JPG";
-import chillone from "./../../component/assets/images/tobi9.JPG";
-import chilltwo from "./../../component/assets/images/tobi5.jpeg";
-import chillthree from "./../../component/assets/images/tobi3.jpeg";
-import chillfour from "./../../component/assets/images/tobi11.JPG";
+import chillone from "./../../component/assets/images/chill1.JPG";
+import chilltwo from "./../../component/assets/images/chill2.JPG";
+import chillthree from "./../../component/assets/images/chill3.JPG";
+import chillfour from "./../../component/assets/images/chill4.JPG";
 import balaLogo from "./../../component/assets/images/bala_logo.png";
+import liptonone from "./../../component/assets/images/lipton1.JPG";
+import liptontwo from "./../../component/assets/images/lipton2.JPG";
+import liptonthree from "./../../component/assets/images/lipton3.JPG";
+import liptonfour from "./../../component/assets/images/lipton4.JPG";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
@@ -50,6 +54,12 @@ const Profile = () => {
     { name: chilltwo, style: "lg" },
     { name: chillthree, style: "sm" },
     { name: chillfour, style: "lg" },
+  ];
+  const liptonImages = [
+    { name: liptonthree, style: "sm" },
+    { name: liptonone, style: "md" },
+    { name: liptontwo, style: "lg" },
+    { name: liptonfour, style: "lg" },
   ];
 
   function changeAnim() {
@@ -135,7 +145,14 @@ const Profile = () => {
             >
               close
             </div>
-            <div className="nav_text" onClick={() => setAnim(true)}>
+            <div
+              className="nav_text"
+              onClick={() => {
+                setAnim(true);
+                setTimeout(() => navigate("/Deduro_Avt/gallery"), 3500);
+                gsap.to(body.current, { opacity: 0, duration: 3.5 });
+              }}
+            >
               gallery
             </div>
           </Box>
@@ -267,12 +284,31 @@ const Profile = () => {
 
                 <Box className="category">
                   <div className="category_title">
-                    <p>LOREM</p>
+                    <p>ANALOG</p>
                     {/* <img src={GtLogo} alt="gt" /> */}
                   </div>
 
                   <div className="category_images">
                     {chillImages.map((item, index) => {
+                      return (
+                        <div
+                          className={item.style}
+                          key={index}
+                          style={{ backgroundImage: `url("${item.name}")` }}
+                        ></div>
+                      );
+                    })}
+                  </div>
+                </Box>
+
+                <Box className="category">
+                  <div className="category_title">
+                    <p>LIPTON</p>
+                    {/* <img src={LiptonLogo} alt="gt" /> */}
+                  </div>
+
+                  <div className="category_images">
+                    {liptonImages.map((item, index) => {
                       return (
                         <div
                           className={item.style}

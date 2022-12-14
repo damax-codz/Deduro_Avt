@@ -4,7 +4,7 @@ import "./Gsap.scss";
 import { useNavigate } from "react-router-dom";
 import { Box } from "@mui/material";
 import Tobi from "../../component/assets/images/tobi4.jpeg";
-import Tobisec from "../../component/assets/images/tobi6.jpeg";
+import Tobisec from "../../component/assets/images/tobi7.JPG";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 gsap.registerPlugin(CSSRulePlugin);
 

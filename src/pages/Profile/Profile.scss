@@ -155,7 +155,7 @@
 
     .work_container {
       margin-bottom: 100px;
-      .mobile{
+      .mobile {
         flex-direction: column;
       }
       .work {
@@ -250,15 +250,9 @@
             }
           }
         }
-        .work_list{
-          p{
-            @include font(
-              "Fondamento",
-              none,
-              600,
-              40px,
-              rgba(0, 0, 0, 0.743)
-            );
+        .work_list {
+          p {
+            @include font("Fondamento", none, 600, 40px, rgba(0, 0, 0, 0.743));
             margin-left: 40px;
           }
         }
@@ -298,20 +292,21 @@
             .md {
               width: 500px;
             }
-            .lg{
+            .lg {
               width: 600px;
             }
           }
         }
       }
     }
-    .footer{
+    .footer {
       display: flex;
       align-items: center;
       width: 100%;
-    justify-content: center;
+      justify-content: space-evenly;
+      margin: 200px 0px;
 
-      button{
+      button {
         width: 70px;
         height: 70px;
         border-radius: 50%;
@@ -326,14 +321,15 @@
           none,
           200,
           12px,
-          rgba(0, 0, 0, 0.743))
+          rgba(0, 0, 0, 0.743)
+        );
       }
-      p{
-        @include font("Fraunces", none, 500, 150px, rgb(0, 0, 0));
-        margin: 0%;
-        span{
-          font-style: italic;
-        }
+        p {
+          @include font("Fraunces", none, 500, 150px, rgb(0, 0, 0));
+          margin: 0%;
+          span {
+            font-style: italic;
+          }
       }
     }
   }
@@ -409,24 +405,24 @@
     margin-bottom: 20px;
   }
 
-  .profile_page .page_container .work_container .work{
+  .profile_page .page_container .work_container .work {
     transform: translateX(0px);
   }
-  .profile_page .page_container .work_container .work{
+  .profile_page .page_container .work_container .work {
     height: auto;
   }
-  .profile_page .page_container .work_container .work .box_one{
+  .profile_page .page_container .work_container .work .box_one {
     flex-direction: column;
     padding: 0px 10px;
   }
-  .profile_page .page_container .work_container .work .box_one .box_one_image{
+  .profile_page .page_container .work_container .work .box_one .box_one_image {
     width: 350px;
     height: 350px;
   }
-  .profile_page .page_container .footer p{
+  .profile_page .page_container .footer p {
     font-size: 50px;
   }
-  .profile_page .page_container .footer{
+  .profile_page .page_container .footer {
     justify-content: space-between;
   }
 }

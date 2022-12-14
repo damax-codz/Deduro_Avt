@@ -2,12 +2,11 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import "./Home.scss";
 import Box from "@mui/material/Box";
 import gsap from "gsap";
-import Tobi from "./../../component/assets/images/tobi4.jpeg";
+import Tobi from "./../../component/assets/images/tobi11.JPG";
 import profile from "./../../component/assets/images/tobi5.jpeg";
 import Exit from "../../component/Exit/Exit";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import { useNavigate } from "react-router";
-
 
 const Home = () => {
   const cursorRef = useRef();
@@ -23,14 +22,11 @@ const Home = () => {
   }
 
   useEffect(() => {
-  
-
     return () => {
       document.body.style.overflowY = "scroll ";
     };
   }, []);
 
-  
   //Gsap animations on load
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -69,7 +65,14 @@ const Home = () => {
             >
               profile
             </div>
-            <div className="nav_text" onClick={() => setAnim(true)}>
+            <div
+              className="nav_text"
+              onClick={() => {
+                setAnim(true);
+                setTimeout(() => navigate("/Deduro_Avt/gallery"), 3500);
+                gsap.to(body.current, { opacity: 0, duration: 3.5 });
+              }}
+            >
               gallery
             </div>
           </Box>
