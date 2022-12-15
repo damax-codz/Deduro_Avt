@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/Deduro_Avt/static/css/main.e1611732.css",
-    "main.js": "/Deduro_Avt/static/js/main.2fef11ba.js",
+    "main.css": "/Deduro_Avt/static/css/main.08c94c89.css",
+    "main.js": "/Deduro_Avt/static/js/main.777db0c9.js",
     "static/js/787.61f79330.chunk.js": "/Deduro_Avt/static/js/787.61f79330.chunk.js",
+    "static/media/maker.JPG": "/Deduro_Avt/static/media/maker.555867f308fd4458c02d.JPG",
     "static/media/tobi10.JPG": "/Deduro_Avt/static/media/tobi10.efeebc2ec5dcf480711d.JPG",
     "static/media/gallery14.JPG": "/Deduro_Avt/static/media/gallery14.ec972a4a69e5f97304ca.JPG",
     "static/media/gallery21.JPG": "/Deduro_Avt/static/media/gallery21.e765d328801a50332b04.JPG",
@@ -16,6 +17,7 @@
     "static/media/gtco1.JPG": "/Deduro_Avt/static/media/gtco1.44a60d205e10a4989723.JPG",
     "static/media/gallery11.JPG": "/Deduro_Avt/static/media/gallery11.a3a88294d3916736123f.JPG",
     "static/media/gallery24.JPG": "/Deduro_Avt/static/media/gallery24.f8909780a61eb2f6e0cb.JPG",
+    "static/media/tobi3.JPG": "/Deduro_Avt/static/media/tobi3.c0c8fdcbb58e5506ad3a.JPG",
     "static/media/bala2.JPG": "/Deduro_Avt/static/media/bala2.392a2ebf97ebc654c91c.JPG",
     "static/media/lipton1.JPG": "/Deduro_Avt/static/media/lipton1.b7f377ea27eddb64f31b.JPG",
     "static/media/chill3.JPG": "/Deduro_Avt/static/media/chill3.e687a24fb6ce6b7dfda1.JPG",
@@ -31,7 +33,6 @@
     "static/media/bala1.JPG": "/Deduro_Avt/static/media/bala1.b83d988beea4a7cee3db.JPG",
     "static/media/tobi7.JPG": "/Deduro_Avt/static/media/tobi7.d98f08982ce0d3c7d0d1.JPG",
     "static/media/lipton3.JPG": "/Deduro_Avt/static/media/lipton3.82a524d2cb3dcd2f2312.JPG",
-    "static/media/tobi3.jpeg": "/Deduro_Avt/static/media/tobi3.6801b0396098113b9e4d.jpeg",
     "static/media/tobi6.jpeg": "/Deduro_Avt/static/media/tobi6.7a74820aba322d824567.jpeg",
     "static/media/gallery12.JPG": "/Deduro_Avt/static/media/gallery12.18e3fb149f1b39a09b85.JPG",
     "static/media/bala_logo.png": "/Deduro_Avt/static/media/bala_logo.e1cc4e04e274c8878946.png",
@@ -42,12 +43,12 @@
     "static/media/tobi4.jpeg": "/Deduro_Avt/static/media/tobi4.baca9a6382c770df75d8.jpeg",
     "static/media/gt.png": "/Deduro_Avt/static/media/gt.3c84c504b1cbd7d8f3af.png",
     "index.html": "/Deduro_Avt/index.html",
-    "main.e1611732.css.map": "/Deduro_Avt/static/css/main.e1611732.css.map",
-    "main.2fef11ba.js.map": "/Deduro_Avt/static/js/main.2fef11ba.js.map",
+    "main.08c94c89.css.map": "/Deduro_Avt/static/css/main.08c94c89.css.map",
+    "main.777db0c9.js.map": "/Deduro_Avt/static/js/main.777db0c9.js.map",
     "787.61f79330.chunk.js.map": "/Deduro_Avt/static/js/787.61f79330.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e1611732.css",
-    "static/js/main.2fef11ba.js"
+    "static/css/main.08c94c89.css",
+    "static/js/main.777db0c9.js"
   ]
 }
