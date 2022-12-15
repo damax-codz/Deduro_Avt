@@ -43,7 +43,6 @@ const Gallery = () => {
   }
 
   const galleryImages = [
-
     { name: gallerysecondeleven, style: "lg panel" },
     { name: galleryfive, style: "lg panel" },
     { name: galleryone, style: "lg panel" },
@@ -74,10 +73,9 @@ const Gallery = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
-    
     if (window.innerWidth > 800) {
       tl.to(".gallery_container", {
-        xPercent: -180,
+        xPercent: -185,
         ease: "P]oower4.inOut",
         scrollTrigger: {
           trigger: ".gallery_container",
@@ -88,8 +86,9 @@ const Gallery = () => {
           // markers: true,
         },
       });
-      
+      document.body.style.overflowX = "hidden";
     } else {
+      document.body.style.overflowX = "hidden";
     }
   }, []);
   return (
