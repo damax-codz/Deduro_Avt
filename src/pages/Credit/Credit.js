@@ -34,8 +34,8 @@ const Credit = () => {
           <div className="left">
             <div className="makers">
               <p>who made this site ?</p>
-              <p>bhadmus damilola</p>
-              <p>loop studio</p>
+              <p> <a href="https://github.com/damax-codz" target="_blank">bhadmus damilola </a></p>
+              <p>  <a href="https://github.com/l00p-studi0" target="_blank">loop studio </a></p>
             </div>
 
             <div className="font">
