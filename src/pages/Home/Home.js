@@ -22,6 +22,14 @@ const Home = () => {
   }
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
+    if (window.innerWidth > 800) {
+      document.body.style.overflow = "hidden";
+    }
+    else{
+      document.body.style.overflowY = "scroll";
+    }
+
     return () => {
       document.body.style.overflowY = "scroll ";
     };

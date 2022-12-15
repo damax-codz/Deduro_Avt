@@ -6,7 +6,7 @@ import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import "./Gallery.scss";
 
 import galleryone from "./../../component/assets/images/chill3.JPG";
-import gallerytwo from "./../../component/assets/images/gallery14.JPG";
+import gallerytwo from "./../../component/assets/images/ai1.png";
 import gallerythree from "./../../component/assets/images/chill5.JPG";
 import galleryfour from "./../../component/assets/images/chill1.JPG";
 import galleryfive from "./../../component/assets/images/tobi1.JPG";
@@ -30,6 +30,8 @@ import gallerysecondsix from "./../../component/assets/images/lipton1.JPG";
 import gallerysecondseven from "./../../component/assets/images/gallery21.JPG";
 import gallerysecondnine from "./../../component/assets/images/gallery24.JPG";
 import gallerysecondten from "./../../component/assets/images/tobi12.JPG";
+import gallerysecondeleven from "./../../component/assets/images/ai2.JPG";
+import gallerysecondtwelve from "./../../component/assets/images/ai3.JPG";
 
 const Gallery = () => {
   const [exitAnim, setAnim] = useState(false);
@@ -41,12 +43,15 @@ const Gallery = () => {
   }
 
   const galleryImages = [
+
+    { name: gallerysecondeleven, style: "lg panel" },
     { name: galleryfive, style: "lg panel" },
     { name: galleryone, style: "lg panel" },
     { name: gallerytwo, style: "md panel" },
     { name: gallerythree, style: "sm panel" },
     { name: galleryfour, style: "sm panel" },
     { name: gallerysix, style: "md panel" },
+    { name: gallerysecondtwelve, style: "md panel" },
     { name: galleryseven, style: "sm panel" },
     { name: galleryeight, style: "md panel" },
     { name: gallerynine, style: "md panel" },
@@ -69,10 +74,10 @@ const Gallery = () => {
   const tl = gsap.timeline();
 
   useLayoutEffect(() => {
-    document.body.style.overflowX = "hidden";
+    
     if (window.innerWidth > 800) {
       tl.to(".gallery_container", {
-        xPercent: -170,
+        xPercent: -180,
         ease: "P]oower4.inOut",
         scrollTrigger: {
           trigger: ".gallery_container",
@@ -83,6 +88,7 @@ const Gallery = () => {
           // markers: true,
         },
       });
+      
     } else {
     }
   }, []);

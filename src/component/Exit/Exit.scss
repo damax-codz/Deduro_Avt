@@ -22,10 +22,8 @@
         overflow: hidden;
         .text{
             opacity: 0;
-            color: white;
-            font-size: 40px;
             line-height: 1;
-            @include font("Syncopate", sans-serif, 200, 44px, rgb(255, 255, 255));
+            @include font("Syncopate", italic, 600, 44px, rgb(255, 255, 255));
             }
     }
 }
