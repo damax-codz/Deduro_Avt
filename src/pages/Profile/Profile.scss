@@ -40,7 +40,7 @@
         width: 100%;
       }
       .hero_title {
-        @include font("Fraunces", serif, 500, 88px, rgb(145, 141, 141));
+        @include font("Fraunces", serif, 500, 88px, rgb(0, 0, 0));
         position: absolute;
         transform: translateY(-50%);
         margin: 0%;

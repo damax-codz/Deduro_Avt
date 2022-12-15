@@ -71,22 +71,20 @@ const Gallery = () => {
   useLayoutEffect(() => {
     document.body.style.overflowX = "hidden";
     if (window.innerWidth > 800) {
-    tl.to(".gallery_container", {
-      xPercent: -170,
-      ease: "P]oower4.inOut",
-      scrollTrigger: {
-        trigger: ".gallery_container",
-        scrub: 2,
-        start: "top 110px",
-        end: "+=3500",
-        pin: true,
-        // markers: true,
-      },
-    });
-  }
-  else{
-    
-  }
+      tl.to(".gallery_container", {
+        xPercent: -170,
+        ease: "P]oower4.inOut",
+        scrollTrigger: {
+          trigger: ".gallery_container",
+          scrub: 2,
+          start: "top 110px",
+          end: "+=3500",
+          pin: true,
+          // markers: true,
+        },
+      });
+    } else {
+    }
   }, []);
   return (
     <>
@@ -127,7 +125,15 @@ const Gallery = () => {
               "earum doloribus facere eius assumenda eaque, aliquam soluta
               consequuntur"
             </p>
-            <button>CREDIT</button>
+            <button
+              onClick={() => {
+                setAnim(true);
+                setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                gsap.to(body.current, { opacity: 0, duration: 3.5 });
+              }}
+            >
+              CREDIT
+            </button>
           </div>
 
           <div className="container_images ">

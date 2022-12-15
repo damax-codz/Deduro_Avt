@@ -4,7 +4,7 @@ import { useNavigate } from "react-router";
 import Exit from "../../component/Exit/Exit";
 import "./Profile.scss";
 import gsap from "gsap";
-import Tobi from "./../../component/assets/images/tobi3.jpeg";
+import Tobi from "./../../component/assets/images/tobi3.JPG";
 import Tobitwo from "./../../component/assets/images/tobi9.JPG";
 import Award from "./../../component/assets/images/tobi10.JPG";
 import work from "./../../component/assets/images/tobi6.jpeg";
@@ -356,7 +356,15 @@ const Profile = () => {
             )}
           </Box>
           <Box className="footer">
-            <button>CREDIT</button>
+            <button
+              onClick={() => {
+                setAnim(true);
+                setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                gsap.to(body.current, { opacity: 0, duration: 3.5 });
+              }}
+            >
+              CREDIT
+            </button>
             <p>
               Thank <span>you!</span>
             </p>

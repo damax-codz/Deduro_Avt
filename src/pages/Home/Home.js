@@ -126,7 +126,15 @@ const Home = () => {
               </Box>
 
               <Box className="btn_container">
-                <button>Credits</button>
+                <button
+                  onClick={() => {
+                    setAnim(true);
+                    setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                    gsap.to(body.current, { opacity: 0, duration: 3.5 });
+                  }}
+                >
+                  Credits
+                </button>
               </Box>
             </div>
 
