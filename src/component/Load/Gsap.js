@@ -6,8 +6,8 @@ import { Box } from "@mui/material";
 import Tobi from "../../component/assets/images/tobi4.jpeg";
 import Tobisec from "../../component/assets/images/tobi7.JPG";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-gsap.registerPlugin(CSSRulePlugin);
 import MetaTags from "react-meta-tags";
+gsap.registerPlugin(CSSRulePlugin);
 
 const Gsap = () => {
   const img = useRef();
