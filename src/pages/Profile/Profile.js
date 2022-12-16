@@ -324,32 +324,31 @@ const Profile = () => {
                 <Box className="box_one">
                   <div className="box_one_image">
                     <img src={work} alt="model" />
-                    <p>Deduro AVT. date by ___-___</p>
+                    <p>Deduro AVT 14 August 2022 by Tfocus</p>
                   </div>
 
                   <div className="box_one_text">
                     <p className="work_start">WORK</p>
                     <p className="work_center">
-                      blanditiis soluta. Alias ut praesentium quia voluptas
-                      dolor ipsum ab enim earum doloribus facere eius assumenda
-                      eaque, aliquam soluta consequuntur
+                    with a Higher National Diploma degree and has worked with
+                      Tfocus photography, Jaykay photography just to mention a
+                      few.
                     </p>
                     <div className="work_end">
                       <button>
                         <ArrowRightAltIcon />
                       </button>
-                      onsequuntur dolore quae autem,
+                      Here are some featured projects, Keep scrolling to see.
                     </div>
                   </div>
                 </Box>
 
                 <Box className="work_list">
-                  <p>GTCO</p>
-                  <p>BALACLAVA</p>
-                  <p>LOREM</p>
-                  <p>LOREM</p>
-                  <p>LOREM</p>
-                  <p>LOREM</p>
+                  <p> <a href="/Deduro_Avt/gallery">GTCO</a></p>
+                  <p>  <a href="/Deduro_Avt/gallery">BALACLAVA</a></p>
+                  <p>  <a href="/Deduro_Avt/gallery">ANALOG</a></p>
+                  <p>  <a href="/Deduro_Avt/gallery">LIPTON</a></p>
+                
                 </Box>
               </Box>
             )}

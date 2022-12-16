@@ -229,7 +229,7 @@
               margin-left: auto;
               button {
                 width: 95px;
-                height: 75px;
+                height: 95px;
                 border-radius: 50%;
                 border: 1px solid rgba(0, 0, 0, 0.455);
                 background-color: rgba(245, 245, 245, 0.681);
@@ -252,8 +252,13 @@
         }
         .work_list {
           p {
-            @include font("Fondamento", none, 600, 40px, rgba(0, 0, 0, 0.743));
-            margin-left: 40px;
+           
+            a{
+              color: black;
+              @include font("Fondamento", none, 600, 40px, rgba(0, 0, 0, 0.743));
+              margin-left: 40px;
+              text-decoration: none;
+            }
           }
         }
         .category {
@@ -305,6 +310,7 @@
       width: 100%;
       justify-content: space-evenly;
       margin: 200px 0px;
+      padding: 0px 20px;
 
       button {
         width: 70px;
