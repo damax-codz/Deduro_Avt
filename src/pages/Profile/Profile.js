@@ -24,7 +24,7 @@ import liptonone from "./../../component/assets/images/lipton1.JPG";
 import liptontwo from "./../../component/assets/images/lipton2.JPG";
 import liptonthree from "./../../component/assets/images/lipton3.JPG";
 import liptonfour from "./../../component/assets/images/lipton4.JPG";
-
+import MetaTags from "react-meta-tags";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -130,6 +130,10 @@ const Profile = () => {
 
   return (
     <>
+      <MetaTags>
+        <title>Deduro Avt</title>
+        <meta name="description" content="Some description." />
+      </MetaTags>
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="profile_page" ref={body}>
@@ -175,25 +179,20 @@ const Profile = () => {
             <div className="intro_text_container">
               <div className="text_one">
                 <h2 className="text_title">
-                  Est saepe, ipsam eveniet suscipit quidem, ratione
+                  is an event host, fashion model and consultant
                 </h2>
                 <p>
-                  — dolor sit amet consectetur adipisicing elit. Deleniti
-                  deserunt harum cumque, quo aut nobis rerum officia velit
-                  temporibus distinctio beatae accusamus, necessitatibus enim
-                  expedita? Sequi ratione at harum repellendus animi et eos
-                  voluptatem, sint aspernatur molestias. Est saepe, ipsam
-                  eveniet suscipit quidem, ratione quia animi quae
+                  — My first modeling appearance was at age 14 when I had to
+                  model for a teenage local magazine. And by stories from my
+                  parents, I dress up myself from when I was 3 years of age.
                 </p>
               </div>
               <div className="text_one">
                 <p>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Deleniti deserunt harum cumque, quo aut nobis rerum officia
-                  velit temporibus distinctio beatae accusamus, necessitatibus
-                  enim expedita? Sequi ratione at harum repellendus animi et eos
-                  voluptatem, sint aspernatur molestias. Est saepe, ipsam
-                  eveniet suscipit quidem, ratione quia animi
+                  Déduro Avt hosted the red carpet for the 2021/2022 NAPES
+                  dinner and awards night and was also the Welfare director for
+                  the society of Industrial Maintenance Engineering Students,
+                  Yabatech.
                 </p>
               </div>
             </div>
@@ -201,21 +200,21 @@ const Profile = () => {
 
           <Box className="award_container">
             <img src={Award} alt="model" />
-            <p>DEDURO X xAWARD DATE</p>
+            <p>DEDURO X NAPES dinner and awards night 2022</p>
           </Box>
 
           <Box className="inspiration">
             <p className="inspiration_text">
-              "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-              doloremque reprehenderit officia delectus enim at quo modi impedit
-              blanditiis soluta. Alias ut praesentium quia voluptas
+              "Modeling is something that's within and I knew what I could do
+              with it from a very young age. From styling my outfits myself to
+              sorting for clothes that gives certain definition to the mood I
+              was in
             </p>
             <p className="inspiration_story">
-              officia delectus enim at quo modi impedit blanditiis soluta. Alias
-              ut praesentium quia voluptas dolor ipsum ab enim earum doloribus
-              facere eius assumenda eaque, aliquam soluta consequuntur dolore
-              quae autem, molestiae, accusantium quo eligendi asperiores
-              dignissimos non possimus! Nobis!
+              Déduro Avt was a nominee and became the winner of the most
+              fashionable male student in the whole of Engineering department,
+              Yabatech, 2022. He also won the star style awards at around 2020
+              held in Festac town, Lagos.
             </p>
           </Box>
 
@@ -225,21 +224,21 @@ const Profile = () => {
                 <Box className="box_one">
                   <div className="box_one_image">
                     <img src={work} alt="model" />
-                    <p>Deduro AVT. date by ___-___</p>
+                    <p>Deduro AVT 14 August 2022 by Tfocus</p>
                   </div>
 
                   <div className="box_one_text">
                     <p className="work_start">WORK</p>
                     <p className="work_center">
-                      blanditiis soluta. Alias ut praesentium quia voluptas
-                      dolor ipsum ab enim earum doloribus facere eius assumenda
-                      eaque, aliquam soluta consequuntur
+                      with a Higher National Diploma degree and has worked with
+                      Tfocus photography, Jaykay photography just to mention a
+                      few.
                     </p>
                     <div className="work_end">
                       <button>
                         <ArrowRightAltIcon />
                       </button>
-                      onsequuntur dolore quae autem,
+                      Here are some featured projects, Keep scrolling to see.
                     </div>
                   </div>
                 </Box>

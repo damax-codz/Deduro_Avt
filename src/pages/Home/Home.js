@@ -7,6 +7,7 @@ import profile from "./../../component/assets/images/tobi5.jpeg";
 import Exit from "../../component/Exit/Exit";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import { useNavigate } from "react-router";
+import MetaTags from "react-meta-tags";
 
 const Home = () => {
   const cursorRef = useRef();
@@ -25,8 +26,7 @@ const Home = () => {
     document.body.style.overflow = "hidden";
     if (window.innerWidth > 800) {
       document.body.style.overflow = "hidden";
-    }
-    else{
+    } else {
       document.body.style.overflowY = "scroll";
     }
 
@@ -57,6 +57,11 @@ const Home = () => {
 
   return (
     <>
+      <MetaTags>
+        <title>Deduro Avt</title>
+        <meta name="description" content="Some description." />
+      </MetaTags>
+
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="home_page" ref={body}>
@@ -101,8 +106,7 @@ const Home = () => {
 
                   <div>
                     <p className="text_two">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Maxime, odio!
+                      Déduro Avt is an event host, fashion model and consultant
                     </p>
                   </div>
                 </Box>
@@ -121,7 +125,8 @@ const Home = () => {
                 <div className="image_description_wrapper ">
                   <p className="image_description_text">
                     {" "}
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.{" "}
+                   He has worked with Tfocus photography, Jaykay photography just to mention a few.
+
                   </p>
                   <Box className="image_description_image_container ">
                     <img

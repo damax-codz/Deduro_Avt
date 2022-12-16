@@ -164,7 +164,7 @@
         display: flex;
         flex-wrap: nowrap;
         overflow: hidden;
-        transform: translateX(43%);
+        transform: translateX(45%);
 
         .box_one {
           height: 100%;
@@ -228,8 +228,8 @@
               max-width: 350px;
               margin-left: auto;
               button {
-                width: 70px;
-                height: 70px;
+                width: 95px;
+                height: 75px;
                 border-radius: 50%;
                 border: 1px solid rgba(0, 0, 0, 0.455);
                 background-color: rgba(245, 245, 245, 0.681);
@@ -245,7 +245,7 @@
                 );
                 text-transform: uppercase;
                 cursor: pointer;
-                margin-right: 5px;
+                margin-right: 45px;
               }
             }
           }

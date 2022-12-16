@@ -134,7 +134,7 @@
           align-items: flex-end;
           .image_description_wrapper {
             display: flex;
-            justify-content: flex-end;
+            justify-content: center;
             .image_description_text {
               @include font(
                 "Noto Sans Chakma",
