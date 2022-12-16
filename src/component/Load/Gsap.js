@@ -7,6 +7,7 @@ import Tobi from "../../component/assets/images/tobi4.jpeg";
 import Tobisec from "../../component/assets/images/tobi7.JPG";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
 gsap.registerPlugin(CSSRulePlugin);
+import MetaTags from "react-meta-tags";
 
 const Gsap = () => {
   const img = useRef();
@@ -32,13 +33,17 @@ const Gsap = () => {
       tl.to(".mun", { yPercent: -2100, duration: 8, ease: "none" })
         .to(".sup", { y: -70, duration: 0.5, delay: 7.6 }, "<")
         .to(".wrapper", { y: -20, opacity: "0", display: "none" }, ">")
-        .set(  CSSRulePlugin.getRule(".img_container::after"),{
-          position: "absolute",
-          width: "100%",
-          height: "100%",
-          top: 0,
-          backgroundColor: "black",
-        },">")
+        .set(
+          CSSRulePlugin.getRule(".img_container::after"),
+          {
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            top: 0,
+            backgroundColor: "black",
+          },
+          ">"
+        )
         .to(".img_container", { display: "flex", delay: 0.5 }, ">")
         .to(
           CSSRulePlugin.getRule(".img_container::after"),
@@ -80,51 +85,58 @@ const Gsap = () => {
     });
   }, []);
   return (
-    <div className="container">
-      <div className="wrapper">
-        <div>
-          <p>'</p>
+    <>
+      <MetaTags>
+        <title>Deduro Avt</title>
+        <meta name="description" content="Some description." />
+      </MetaTags>
+
+      <div className="container">
+        <div className="wrapper">
+          <div>
+            <p>'</p>
+          </div>
+          <div>
+            <p className="sup">0</p>
+            <p className="sup">1</p>
+          </div>
+          <div className="mun">
+            <p className="num">00</p>
+            <p className="num">05</p>
+            <p className="num">15</p>
+            <p className="num">22</p>
+            <p className="num">26</p>
+            <p className="num">32</p>
+            <p className="num">45</p>
+            <p className="num">47</p>
+            <p className="num">52</p>
+            <p className="num">56</p>
+            <p className="num">59</p>
+            <p className="num">60</p>
+            <p className="num">65</p>
+            <p className="num">70</p>
+            <p className="num">76</p>
+            <p className="num">82</p>
+            <p className="num">85</p>
+            <p className="num">88</p>
+            <p className="num">90</p>
+            <p className="num">93</p>
+            <p className="num">95</p>
+            <p className="num">00</p>
+          </div>
         </div>
-        <div>
-          <p className="sup">0</p>
-          <p className="sup">1</p>
-        </div>
-        <div className="mun">
-          <p className="num">00</p>
-          <p className="num">05</p>
-          <p className="num">15</p>
-          <p className="num">22</p>
-          <p className="num">26</p>
-          <p className="num">32</p>
-          <p className="num">45</p>
-          <p className="num">47</p>
-          <p className="num">52</p>
-          <p className="num">56</p>
-          <p className="num">59</p>
-          <p className="num">60</p>
-          <p className="num">65</p>
-          <p className="num">70</p>
-          <p className="num">76</p>
-          <p className="num">82</p>
-          <p className="num">85</p>
-          <p className="num">88</p>
-          <p className="num">90</p>
-          <p className="num">93</p>
-          <p className="num">95</p>
-          <p className="num">00</p>
-        </div>
+
+        <Box className="name">
+          <p>Deduro</p>
+          <p>Avt</p>
+        </Box>
+
+        <Box className="img_container">
+          <img ref={img2} src={Tobisec} alt="tobi" className="img_two"></img>
+          <img ref={img} src={Tobi} alt="tobi" className="img_one"></img>
+        </Box>
       </div>
-
-      <Box className="name">
-        <p>Deduro</p>
-        <p>Avt</p>
-      </Box>
-
-      <Box className="img_container">
-        <img ref={img2} src={Tobisec} alt="tobi" className="img_two"></img>
-        <img ref={img} src={Tobi} alt="tobi" className="img_one"></img>
-      </Box>
-    </div>
+    </>
   );
 };
 
