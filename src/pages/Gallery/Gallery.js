@@ -75,7 +75,7 @@ const Gallery = () => {
   useLayoutEffect(() => {
     if (window.innerWidth > 800) {
       tl.to(".gallery_container", {
-        xPercent: -185,
+        xPercent: -205,
         ease: "P]oower4.inOut",
         scrollTrigger: {
           trigger: ".gallery_container",
