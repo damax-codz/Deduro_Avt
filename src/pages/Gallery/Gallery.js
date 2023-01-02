@@ -101,7 +101,7 @@ const Gallery = () => {
             className="nav_text"
             onClick={() => {
               setAnim(true);
-              setTimeout(() => navigate("/Deduro_Avt/home"), 3500);
+              setTimeout(() => navigate("/home"), 3500);
               gsap.to(body.current, { opacity: 0, duration: 3.5 });
             }}
           >
@@ -111,7 +111,7 @@ const Gallery = () => {
             className="nav_text"
             onClick={() => {
               setAnim(true);
-              setTimeout(() => navigate("/Deduro_Avt/profile"), 3500);
+              setTimeout(() => navigate("/profile"), 3500);
               gsap.to(body.current, { opacity: 0, duration: 3.5 });
             }}
           >
@@ -132,7 +132,7 @@ const Gallery = () => {
             <button
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                setTimeout(() => navigate("/credit"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
@@ -159,7 +159,7 @@ const Gallery = () => {
               <button
                 onClick={() => {
                   setAnim(true);
-                  setTimeout(() => navigate("/Deduro_Avt/home"), 3500);
+                  setTimeout(() => navigate("/home"), 3500);
                   gsap.to(body.current, { opacity: 0, duration: 3.5 });
                 }}
               >

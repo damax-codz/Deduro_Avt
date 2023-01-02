@@ -139,7 +139,7 @@ const Profile = () => {
               className="nav_text"
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/home"), 3500);
+                setTimeout(() => navigate("/home"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
@@ -149,7 +149,7 @@ const Profile = () => {
               className="nav_text"
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/gallery"), 3500);
+                setTimeout(() => navigate("/gallery"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
@@ -340,10 +340,10 @@ const Profile = () => {
                 </Box>
 
                 <Box className="work_list">
-                  <p> <a href="/Deduro_Avt/gallery">GTCO</a></p>
-                  <p>  <a href="/Deduro_Avt/gallery">BALACLAVA</a></p>
-                  <p>  <a href="/Deduro_Avt/gallery">ANALOG</a></p>
-                  <p>  <a href="/Deduro_Avt/gallery">LIPTON</a></p>
+                  <p> <a href="/gallery">GTCO</a></p>
+                  <p>  <a href="/gallery">BALACLAVA</a></p>
+                  <p>  <a href="/gallery">ANALOG</a></p>
+                  <p>  <a href="/gallery">LIPTON</a></p>
                 
                 </Box>
               </Box>
@@ -353,7 +353,7 @@ const Profile = () => {
             <button
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                setTimeout(() => navigate("/credit"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >

@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/Deduro_Avt/" element={<Gsap />} />
-          <Route path="/Deduro_Avt/home" element={<Home />} />
-          <Route path="/Deduro_Avt/profile" element={<Profile />} />
-          <Route path="/Deduro_Avt/gallery" element={<Gallery />} />
-          <Route path="/Deduro_Avt/credit" element={<Credit />} />
+          <Route path="/" element={<Gsap />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/credit" element={<Credit />} />
         </Routes>
       </BrowserRouter>
     </div>

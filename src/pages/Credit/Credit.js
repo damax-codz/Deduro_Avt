@@ -23,7 +23,7 @@ const Credit = () => {
           <button
             onClick={() => {
               setAnim(true);
-              setTimeout(() => navigate("/Deduro_Avt/home"), 3500);
+              setTimeout(() => navigate("/home"), 3500);
               gsap.to(body.current, { opacity: 0, duration: 3.5 });
             }}
           >

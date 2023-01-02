@@ -69,7 +69,7 @@ const Home = () => {
               className="nav_text"
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/profile"), 3500);
+                setTimeout(() => navigate("/profile"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
@@ -79,7 +79,7 @@ const Home = () => {
               className="nav_text"
               onClick={() => {
                 setAnim(true);
-                setTimeout(() => navigate("/Deduro_Avt/gallery"), 3500);
+                setTimeout(() => navigate("/gallery"), 3500);
                 gsap.to(body.current, { opacity: 0, duration: 3.5 });
               }}
             >
@@ -139,7 +139,7 @@ const Home = () => {
                 <button
                   onClick={() => {
                     setAnim(true);
-                    setTimeout(() => navigate("/Deduro_Avt/credit"), 3500);
+                    setTimeout(() => navigate("/credit"), 3500);
                     gsap.to(body.current, { opacity: 0, duration: 3.5 });
                   }}
                 >
