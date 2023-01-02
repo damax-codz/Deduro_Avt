@@ -24,7 +24,7 @@ import MetaTags from "react-meta-tags";
 import gallerysecondone from "./../../component/assets/images/bala1.JPG";
 import gallerysecondtwo from "./../../component/assets/images/bala2.JPG";
 import gallerysecondthree from "./../../component/assets/images/bala3.JPG";
-import gallerysecondfour from "./../../component/assets/images/tobi7.JPG";
+import gallerysecondfour from "./../../component/assets/images/tobi4.jpeg";
 import gallerysecondfive from "./../../component/assets/images/lipton3.JPG";
 import gallerysecondsix from "./../../component/assets/images/lipton1.JPG";
 import gallerysecondseven from "./../../component/assets/images/gallery21.JPG";
