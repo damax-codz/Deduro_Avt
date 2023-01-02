@@ -6,7 +6,6 @@ import { useNavigate } from "react-router";
 import Exit from "../../component/Exit/Exit";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import gsap from "gsap";
-import MetaTags from "react-meta-tags";
 
 const Credit = () => {
   const [exitAnim, setAnim] = useState(false);
@@ -17,10 +16,6 @@ const Credit = () => {
   }
   return (
     <>
-       <MetaTags>
-        <title>Deduro Avt</title>
-        <meta name="description" content="Some description." />
-      </MetaTags>
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="credit_container" ref={body}>
@@ -39,8 +34,18 @@ const Credit = () => {
           <div className="left">
             <div className="makers">
               <p>who made this site ?</p>
-              <p> <a href="https://github.com/damax-codz" target="_blank">bhadmus damilola </a></p>
-              <p>  <a href="https://github.com/l00p-studi0" target="_blank">loop studio </a></p>
+              <p>
+                {" "}
+                <a href="https://github.com/damax-codz" target="_blank">
+                  bhadmus damilola{" "}
+                </a>
+              </p>
+              <p>
+                {" "}
+                <a href="https://github.com/l00p-studi0" target="_blank">
+                  loop studio{" "}
+                </a>
+              </p>
             </div>
 
             <div className="font">

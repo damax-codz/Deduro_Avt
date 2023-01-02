@@ -6,7 +6,7 @@ import { Box } from "@mui/material";
 import Tobi from "../../component/assets/images/tobi4.jpeg";
 import Tobisec from "../../component/assets/images/tobi5.jpeg";
 import CSSRulePlugin from "gsap/CSSRulePlugin";
-import MetaTags from "react-meta-tags";
+
 gsap.registerPlugin(CSSRulePlugin);
 
 const Gsap = () => {
@@ -86,10 +86,7 @@ const Gsap = () => {
   }, []);
   return (
     <>
-      <MetaTags>
-        <title>Deduro Avt</title>
-        <meta name="description" content="Some description." />
-      </MetaTags>
+     
 
       <div className="container">
         <div className="wrapper">

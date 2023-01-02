@@ -7,7 +7,7 @@ import profile from "./../../component/assets/images/tobi5.jpeg";
 import Exit from "../../component/Exit/Exit";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import { useNavigate } from "react-router";
-import MetaTags from "react-meta-tags";
+
 
 const Home = () => {
   const cursorRef = useRef();
@@ -57,10 +57,7 @@ const Home = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>Deduro Avt</title>
-        <meta name="description" content="Some description." />
-      </MetaTags>
+   
 
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />

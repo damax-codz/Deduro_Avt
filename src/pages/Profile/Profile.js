@@ -24,7 +24,6 @@ import liptonone from "./../../component/assets/images/lipton1.JPG";
 import liptontwo from "./../../component/assets/images/lipton2.JPG";
 import liptonthree from "./../../component/assets/images/lipton3.JPG";
 import liptonfour from "./../../component/assets/images/lipton4.JPG";
-import MetaTags from "react-meta-tags";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MouseFollow from "../../component/MouseFollow/MouseFollow";
 import ArrowRightAltIcon from "@mui/icons-material/ArrowRightAlt";
@@ -130,10 +129,7 @@ const Profile = () => {
 
   return (
     <>
-      <MetaTags>
-        <title>Deduro Avt</title>
-        <meta name="description" content="Some description." />
-      </MetaTags>
+   
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="profile_page" ref={body}>

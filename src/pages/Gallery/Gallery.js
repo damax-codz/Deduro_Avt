@@ -20,7 +20,7 @@ import gallerytwelve from "./../../component/assets/images/gallery12.JPG";
 import gallerythirteen from "./../../component/assets/images/gallery13.JPG";
 import galleryfourteen from "./../../component/assets/images/tobi9.JPG";
 import galleryfifteen from "./../../component/assets/images/gallery15.JPG";
-import MetaTags from "react-meta-tags";
+
 import gallerysecondone from "./../../component/assets/images/bala1.JPG";
 import gallerysecondtwo from "./../../component/assets/images/bala2.JPG";
 import gallerysecondthree from "./../../component/assets/images/bala3.JPG";
@@ -92,11 +92,7 @@ const Gallery = () => {
     }
   }, []);
   return (
-    <>
-       <MetaTags>
-        <title>Deduro Avt</title>
-        <meta name="description" content="Some description." />
-      </MetaTags>
+    
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="gallery_page" ref={body}>
