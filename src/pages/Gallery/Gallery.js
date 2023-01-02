@@ -92,7 +92,7 @@ const Gallery = () => {
     }
   }, []);
   return (
-    
+    <>
       <Exit exitAnim={exitAnim} changeAnim={changeAnim} />
       <MouseFollow />
       <div className="gallery_page" ref={body}>
